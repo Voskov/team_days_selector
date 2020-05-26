@@ -1,9 +1,9 @@
 import random
 from typing import List
-
+from pprint import pprint as pp
 
 class DaysSelector:
-    DAYS = [1, 2, 3, 4, 5]
+    DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
     TEAM = ['Ariel', 'Ofir', 'Harel', 'Udi', 'Josef']
 
     def __init__(self):
@@ -23,4 +23,4 @@ class DaysSelector:
 
 
 ds = DaysSelector()
-print(ds.distribute_shifts())
+pp(ds.distribute_shifts())
